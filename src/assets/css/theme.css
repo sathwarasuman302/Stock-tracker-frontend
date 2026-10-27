@@ -1,0 +1,521 @@
+:root[data-theme="dark"] {
+	color-scheme: dark;
+	--jp-ink: #e6edf5;
+	--jp-muted: #a1afbf;
+	--jp-line: #2b3948;
+	--jp-surface: #151f2b;
+	--jp-canvas: #0d141d;
+	--jp-subtle: #1d2a38;
+	--jp-accent: #65aaff;
+	--jp-accent-ink: #08121e;
+	--jp-shadow: 0 12px 32px rgba(0, 0, 0, 0.28);
+}
+
+:root[data-theme="light"] {
+	color-scheme: light;
+	--jp-ink: #122033;
+	--jp-muted: #5a6b7d;
+	--jp-line: #d4dde8;
+	--jp-surface: #ffffff;
+	--jp-canvas: #eef2f6;
+	--jp-subtle: #f5f7fa;
+	--jp-accent: #0a5fad;
+	--jp-accent-ink: #ffffff;
+	--jp-shadow: 0 10px 28px rgba(18, 32, 51, 0.08);
+}
+
+html,
+body,
+#root {
+	min-height: 100%;
+}
+
+html,
+#root {
+	background: var(--jp-canvas);
+}
+
+:root[data-theme="dark"] body {
+	background: var(--jp-canvas);
+	color: var(--jp-ink);
+	transition: background-color 180ms ease, color 180ms ease;
+}
+
+:root[data-theme="light"] body {
+	background: var(--jp-canvas);
+	color: var(--jp-ink);
+	transition: background-color 180ms ease, color 180ms ease;
+}
+
+:root[data-theme="dark"] .jp-nav {
+	background: rgba(15, 23, 33, 0.94);
+}
+
+:root[data-theme="dark"] .jp-nav__link,
+:root[data-theme="dark"] .jp-nav__dropdown a,
+:root[data-theme="dark"] .jp-nav__dropdown button {
+	color: var(--jp-ink);
+}
+
+:root[data-theme="dark"] .jp-nav__link:hover,
+:root[data-theme="dark"] .jp-nav__dropdown a:hover,
+:root[data-theme="dark"] .jp-nav__dropdown button:hover {
+	background: #233244;
+}
+
+:root[data-theme="dark"] .jp-nav__dropdown,
+:root[data-theme="dark"] .jp-nav__menu {
+	background: var(--jp-surface);
+	border-color: var(--jp-line);
+}
+
+:root[data-theme="dark"] .jp-page,
+:root[data-theme="dark"] .stock-detail-page:not(.stock-detail-page--crypto),
+:root[data-theme="dark"] .stock-detail-terminal,
+:root[data-theme="dark"] .trading-terminal-layout,
+:root[data-theme="dark"] .admin-shell {
+	background: var(--jp-canvas);
+	color: var(--jp-ink);
+}
+
+:root[data-theme="dark"] .jp-featured,
+:root[data-theme="dark"] .stock-detail-terminal__center,
+:root[data-theme="dark"] .stock-detail-page:not(.stock-detail-page--crypto) .live-candlestick-chart,
+:root[data-theme="dark"] .jp-table-wrap,
+:root[data-theme="dark"] .jp-auth__panel,
+:root[data-theme="dark"] .portfolio-summary__card,
+:root[data-theme="dark"] .portfolio-table-wrap,
+:root[data-theme="dark"] .investor-account__card,
+:root[data-theme="dark"] .investor-account__panel,
+:root[data-theme="dark"] .chart-toolbar,
+:root[data-theme="dark"] .candlestick-chart-container:not(.candlestick-chart-container--crypto),
+:root[data-theme="dark"] .candlestick-chart-wrapper,
+:root[data-theme="dark"] .candlestick-price-area,
+:root[data-theme="dark"] .candlestick-volume-panel,
+:root[data-theme="dark"] .candlestick-chart,
+:root[data-theme="dark"] .candlestick-volume-chart,
+:root[data-theme="dark"] .candlestick-chart-timeframes,
+:root[data-theme="dark"] .order-modal,
+:root[data-theme="dark"] .position-status,
+:root[data-theme="dark"] .chart-live-status,
+:root[data-theme="dark"] .stock-selector__btn,
+:root[data-theme="dark"] .admin-topbar,
+:root[data-theme="dark"] .admin-content,
+:root[data-theme="dark"] .admin-table-wrap,
+:root[data-theme="dark"] .admin-card,
+:root[data-theme="dark"] .admin-stat,
+:root[data-theme="dark"] .admin-card-form,
+:root[data-theme="dark"] .admin-users-summary__metrics,
+:root[data-theme="dark"] .admin-users-table th:first-child,
+:root[data-theme="dark"] .admin-users-table td:first-child,
+:root[data-theme="dark"] .admin-photo-modal__content,
+:root[data-theme="dark"] .gw-auth__form-panel {
+	background-color: var(--jp-surface);
+	color: var(--jp-ink);
+	border-color: var(--jp-line);
+}
+
+:root[data-theme="dark"] .portfolio-dashboard,
+:root[data-theme="dark"] .investor-account,
+:root[data-theme="dark"] .admin-main,
+:root[data-theme="dark"] .admin-content {
+	color: var(--jp-ink);
+}
+
+:root[data-theme="dark"] .jp-table th,
+:root[data-theme="dark"] .jp-table td,
+:root[data-theme="dark"] .portfolio-overview,
+:root[data-theme="dark"] .portfolio-overview > div,
+:root[data-theme="dark"] .jp-job-list,
+:root[data-theme="dark"] .jp-job-row,
+:root[data-theme="dark"] .stock-detail-page:not(.stock-detail-page--crypto) .stock-price-header,
+:root[data-theme="dark"] .stock-detail-page:not(.stock-detail-page--crypto) .stock-selector,
+:root[data-theme="dark"] .admin-topbar {
+	border-color: var(--jp-line);
+}
+
+:root[data-theme="dark"] .jp-job-row__title,
+:root[data-theme="dark"] .portfolio-summary__card > strong,
+:root[data-theme="dark"] .portfolio-overview strong,
+:root[data-theme="dark"] .stock-price-header__name,
+:root[data-theme="dark"] .stock-price-header__price,
+:root[data-theme="dark"] .stock-detail-instrument-heading h1,
+:root[data-theme="dark"] .order-modal__title,
+:root[data-theme="dark"] .admin-topbar__user,
+:root[data-theme="dark"] .gw-auth__title,
+:root[data-theme="dark"] .jp-page__intro h1 {
+	color: var(--jp-ink);
+}
+
+:root[data-theme="dark"] .jp-job-row__meta,
+:root[data-theme="dark"] .portfolio-summary__card > span,
+:root[data-theme="dark"] .portfolio-summary__card > small,
+:root[data-theme="dark"] .portfolio-overview span,
+:root[data-theme="dark"] .portfolio-positions__heading > p,
+:root[data-theme="dark"] .portfolio-table td,
+:root[data-theme="dark"] .stock-price-header__symbol,
+:root[data-theme="dark"] .stock-price-header__exchange,
+:root[data-theme="dark"] .stock-detail-instrument-heading span,
+:root[data-theme="dark"] .candlestick-chart-header,
+:root[data-theme="dark"] .chart-exchange,
+:root[data-theme="dark"] .chart-ohlc,
+:root[data-theme="dark"] .chart-price-labels,
+:root[data-theme="dark"] .candlestick-volume-title,
+:root[data-theme="dark"] .admin-page-head p,
+:root[data-theme="dark"] .admin-stat p,
+:root[data-theme="dark"] .admin-stat span,
+:root[data-theme="dark"] .admin-users-summary__metrics span,
+:root[data-theme="dark"] .admin-user-identity small,
+:root[data-theme="dark"] .admin-users-empty,
+:root[data-theme="dark"] .order-modal__price,
+:root[data-theme="dark"] .admin-topbar__user,
+:root[data-theme="dark"] .jp-page__intro p {
+	color: var(--jp-muted);
+}
+
+:root[data-theme="dark"] .chart-symbol,
+:root[data-theme="dark"] .portfolio-overview strong,
+:root[data-theme="dark"] .portfolio-positions__heading h2,
+:root[data-theme="dark"] .portfolio-table__symbol,
+:root[data-theme="dark"] .portfolio-table__empty strong,
+:root[data-theme="dark"] .admin-user-identity strong,
+:root[data-theme="dark"] .admin-users-empty strong,
+:root[data-theme="dark"] .admin-photo-modal__content strong {
+	color: var(--jp-ink);
+}
+
+:root[data-theme="dark"] .admin-search,
+:root[data-theme="dark"] .admin-form-grid input,
+:root[data-theme="dark"] .admin-form-grid select,
+:root[data-theme="dark"] .admin-table select,
+:root[data-theme="dark"] .admin-users-table th,
+:root[data-theme="dark"] .portfolio-table th {
+	border-color: var(--jp-line);
+	background: #101923;
+	color: var(--jp-ink);
+}
+
+:root[data-theme="dark"] .portfolio-overview,
+:root[data-theme="dark"] .portfolio-overview > div,
+:root[data-theme="dark"] .portfolio-table th,
+:root[data-theme="dark"] .portfolio-table td,
+:root[data-theme="dark"] .admin-table th,
+:root[data-theme="dark"] .admin-table td {
+	border-color: var(--jp-line);
+}
+
+:root[data-theme="dark"] .portfolio-positions__heading h2 span,
+:root[data-theme="dark"] .portfolio-growth--neutral {
+	background: #263545;
+	color: #c1ccda;
+}
+
+:root[data-theme="dark"] .portfolio-growth--positive,
+:root[data-theme="dark"] .portfolio-direction--long {
+	background: rgba(0, 134, 87, 0.18);
+	color: #48d5a0;
+}
+
+:root[data-theme="dark"] .portfolio-growth--negative,
+:root[data-theme="dark"] .portfolio-direction--short {
+	background: rgba(200, 62, 62, 0.18);
+	color: #ff8585;
+}
+
+:root[data-theme="dark"] .admin-photo-status,
+:root[data-theme="dark"] .admin-photo-status.is-present,
+:root[data-theme="dark"] .admin-users-table th {
+	background: #1d2a38;
+	color: var(--jp-muted);
+}
+
+:root[data-theme="dark"] .stock-detail-page:not(.stock-detail-page--crypto) .candlestick-chart,
+:root[data-theme="dark"] .stock-detail-page:not(.stock-detail-page--crypto) .candlestick-volume-chart {
+	background: #111923;
+}
+
+:root[data-theme="dark"] .stock-detail-page:not(.stock-detail-page--crypto) .candlestick-chart-header {
+	color: var(--jp-muted);
+}
+
+:root[data-theme="dark"] .stock-detail-page:not(.stock-detail-page--crypto) .live-candlestick-chart__header {
+	color: var(--jp-ink);
+}
+
+:root[data-theme="dark"] .stock-detail-page:not(.stock-detail-page--crypto) .live-candlestick-chart__header span {
+	color: var(--jp-muted);
+}
+
+:root[data-theme="dark"] .stock-detail-page:not(.stock-detail-page--crypto) .live-candlestick-chart__external-link {
+	color: var(--jp-accent);
+}
+
+:root[data-theme="dark"] .stock-detail-page:not(.stock-detail-page--crypto) .timeframe-btn.is-active {
+	border-color: var(--jp-accent);
+	background: var(--jp-accent);
+	color: #ffffff;
+}
+
+:root[data-theme="dark"] .investor-welcome,
+:root[data-theme="dark"] .investor-metric {
+	border-color: var(--jp-line);
+	background: var(--jp-surface);
+	color: var(--jp-ink);
+}
+
+:root[data-theme="dark"] .investor-welcome h2,
+:root[data-theme="dark"] .investor-section__heading h2,
+:root[data-theme="dark"] .investor-metric strong {
+	color: var(--jp-ink);
+}
+
+:root[data-theme="dark"] .investor-welcome p,
+:root[data-theme="dark"] .investor-eyebrow,
+:root[data-theme="dark"] .investor-metric > span,
+:root[data-theme="dark"] .investor-metric small {
+	color: var(--jp-muted);
+}
+
+:root[data-theme="dark"] .investor-error,
+:root[data-theme="dark"] .portfolio-dashboard__error {
+	border-color: rgba(255, 133, 133, 0.3);
+	background: rgba(200, 62, 62, 0.14);
+	color: #ffaaaa;
+}
+
+:root[data-theme="dark"] .admin-users-table th:first-child,
+:root[data-theme="dark"] .admin-users-table td:first-child {
+	box-shadow: 1px 0 0 var(--jp-line);
+}
+
+:root[data-theme="dark"] input,
+:root[data-theme="dark"] select,
+:root[data-theme="dark"] textarea,
+:root[data-theme="dark"] .jp-form input,
+:root[data-theme="dark"] .jp-form select,
+:root[data-theme="dark"] .jp-form textarea,
+:root[data-theme="dark"] .order-modal__input {
+	border-color: var(--jp-line);
+	background: #101923;
+	color: var(--jp-ink);
+}
+
+:root[data-theme="dark"] input::placeholder,
+:root[data-theme="dark"] textarea::placeholder {
+	color: #8493a5;
+}
+
+:root[data-theme="dark"] .timeframe-btn,
+:root[data-theme="dark"] .chart-toolbar-btn,
+:root[data-theme="dark"] .jp-nav__toggle,
+:root[data-theme="dark"] .theme-toggle {
+	border-color: var(--jp-line);
+	background: var(--jp-surface);
+	color: var(--jp-ink);
+}
+
+:root[data-theme="dark"] .timeframe-btn:hover,
+:root[data-theme="dark"] .chart-toolbar-btn:hover,
+:root[data-theme="dark"] .theme-toggle:hover {
+	background: #233244;
+}
+
+:root[data-theme="dark"] .chart-toolbar-btn--buy,
+:root[data-theme="dark"] .chart-toolbar-btn--sell {
+	color: #ffffff;
+}
+
+:root[data-theme="dark"] .gw-auth {
+	background: #0d141d;
+}
+
+:root[data-theme="dark"] .gw-auth__brand-panel {
+	background: linear-gradient(145deg, #122b35 0%, #14253d 55%, #1c2450 100%);
+}
+
+:root[data-theme="dark"] .gw-auth__form-panel {
+	background: #0d141d;
+}
+
+:root[data-theme="dark"] .gw-auth__form-panel,
+:root[data-theme="dark"] .gw-auth__form-inner,
+:root[data-theme="dark"] .gw-auth__form-inner p,
+:root[data-theme="dark"] .gw-auth__form-inner label {
+	color: var(--jp-ink);
+}
+
+:root[data-theme="dark"] .stock-detail-page--crypto {
+	background:
+		radial-gradient(ellipse at 50% -18%, rgba(32, 75, 120, 0.28), transparent 58%),
+		#0b1118;
+}
+
+:root[data-theme="dark"] .live-candlestick-chart--crypto {
+	border-color: #263241;
+	background: linear-gradient(155deg, #121b26, #0e151e 72%);
+}
+
+:root[data-theme="dark"] .live-candlestick-chart--crypto .candlestick-chart-wrapper,
+:root[data-theme="dark"] .live-candlestick-chart--crypto .candlestick-chart,
+:root[data-theme="dark"] .live-candlestick-chart--crypto .candlestick-volume-chart,
+:root[data-theme="dark"] .live-candlestick-chart--crypto .candlestick-volume-panel {
+	background: #0c121a;
+}
+
+:root[data-theme="dark"] .live-candlestick-chart--crypto .candlestick-chart-wrapper,
+:root[data-theme="dark"] .live-candlestick-chart--crypto .candlestick-price-area {
+	border-color: #253140;
+}
+
+:root[data-theme="light"] .stock-detail-page--crypto {
+	background:
+		radial-gradient(ellipse at 50% -18%, rgba(10, 95, 173, 0.1), transparent 58%),
+		#eef2f6;
+	color: #122033;
+}
+
+:root[data-theme="light"] .stock-detail-page--crypto .stock-selector {
+	border-bottom-color: #d4dde8;
+}
+
+:root[data-theme="light"] .stock-detail-page--crypto .stock-selector__btn {
+	border-color: #d4dde8;
+	background: #ffffff;
+	color: #5a6b7d;
+}
+
+:root[data-theme="light"] .stock-detail-page--crypto .stock-selector__btn.is-active {
+	border-color: #0a5fad;
+	background: #0a5fad;
+	color: #ffffff;
+}
+
+:root[data-theme="light"] .crypto-paper-wallet {
+	border-color: #d4dde8;
+	background: #ffffff;
+	color: #122033;
+}
+
+:root[data-theme="light"] .crypto-paper-wallet span,
+:root[data-theme="light"] .crypto-paper-wallet small {
+	color: #5a6b7d;
+}
+
+:root[data-theme="light"] .stock-detail-page--crypto .stock-detail-instrument-heading h1,
+:root[data-theme="light"] .stock-detail-page--crypto .stock-price-header__name,
+:root[data-theme="light"] .stock-detail-page--crypto .stock-price-header__price {
+	color: #122033;
+}
+
+:root[data-theme="light"] .stock-detail-page--crypto .stock-detail-instrument-heading span,
+:root[data-theme="light"] .stock-detail-page--crypto .stock-price-header__symbol,
+:root[data-theme="light"] .stock-detail-page--crypto .stock-price-header__exchange {
+	color: #5a6b7d;
+}
+
+:root[data-theme="light"] .stock-detail-page--crypto .stock-price-header {
+	border-bottom-color: #d4dde8;
+}
+
+:root[data-theme="light"] .live-candlestick-chart--crypto {
+	border-color: #d4dde8;
+	background: linear-gradient(155deg, #ffffff, #f8fafc 72%);
+	box-shadow: 0 16px 40px rgba(18, 32, 51, 0.08);
+}
+
+:root[data-theme="light"] .live-candlestick-chart--crypto .live-candlestick-chart__header {
+	border-bottom-color: #e4e9ef;
+	color: #122033;
+}
+
+:root[data-theme="light"] .live-candlestick-chart--crypto .live-candlestick-chart__header span,
+:root[data-theme="light"] .live-candlestick-chart--crypto .chart-exchange,
+:root[data-theme="light"] .live-candlestick-chart--crypto .chart-ohlc {
+	color: #5a6b7d;
+}
+
+:root[data-theme="light"] .live-candlestick-chart--crypto .live-candlestick-chart__external-link {
+	border-color: #d4dde8;
+	color: #0a5fad;
+}
+
+:root[data-theme="light"] .crypto-feed-status {
+	border-color: rgba(6, 118, 71, 0.22);
+	background: rgba(6, 118, 71, 0.08);
+	color: #067647 !important;
+}
+
+:root[data-theme="light"] .crypto-feed-status--error {
+	border-color: rgba(180, 35, 24, 0.22);
+	background: rgba(180, 35, 24, 0.08);
+	color: #b42318 !important;
+}
+
+:root[data-theme="light"] .live-candlestick-chart--crypto .chart-symbol {
+	color: #122033;
+}
+
+:root[data-theme="light"] .live-candlestick-chart--crypto .candlestick-chart-wrapper,
+:root[data-theme="light"] .live-candlestick-chart--crypto .candlestick-chart,
+:root[data-theme="light"] .live-candlestick-chart--crypto .candlestick-volume-chart,
+:root[data-theme="light"] .live-candlestick-chart--crypto .candlestick-volume-panel {
+	background: #ffffff;
+}
+
+:root[data-theme="light"] .live-candlestick-chart--crypto .candlestick-chart-wrapper,
+:root[data-theme="light"] .live-candlestick-chart--crypto .candlestick-price-area {
+	border-color: #e1e7ee;
+}
+
+:root[data-theme="light"] .live-candlestick-chart--crypto .chart-price-labels,
+:root[data-theme="light"] .live-candlestick-chart--crypto .candlestick-volume-title {
+	color: #5a6b7d;
+}
+
+:root[data-theme="light"] .live-candlestick-chart--crypto .chart-price-label--current {
+	background: #0a5fad;
+}
+
+:root[data-theme="light"] .live-candlestick-chart--crypto .chart-price-label--crosshair {
+	background: #122033;
+	color: #ffffff !important;
+}
+
+:root[data-theme="light"] .live-candlestick-chart--crypto .timeframe-btn {
+	border-color: #d4dde8;
+	background: #ffffff;
+	color: #5a6b7d;
+}
+
+:root[data-theme="light"] .live-candlestick-chart--crypto .timeframe-btn:hover {
+	border-color: #0a5fad;
+	background: #f0f5fb;
+	color: #0a5fad;
+}
+
+:root[data-theme="light"] .live-candlestick-chart--crypto .timeframe-btn.is-active {
+	border-color: #0a5fad;
+	background: #0a5fad;
+	color: #ffffff;
+}
+
+:root[data-theme="light"] .stock-detail-page--crypto .chart-live-status {
+	border-color: #d4dde8;
+	background: #f4f7fa;
+	color: #34445a;
+}
+
+@media (max-width: 900px) {
+	.jp-nav__theme-toggle {
+		margin-left: auto;
+	}
+}
+
+@media (prefers-reduced-motion: reduce) {
+	*,
+	*::before,
+	*::after {
+		scroll-behavior: auto !important;
+		transition-duration: 0.01ms !important;
+	}
+}
